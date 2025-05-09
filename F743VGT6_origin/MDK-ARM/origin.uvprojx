@@ -900,6 +900,11 @@
               <FileType>1</FileType>
               <FilePath>..\mcu_bsp\system_controller\pid.c</FilePath>
             </File>
+            <File>
+              <FileName>Emm_V5.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mcu_bsp\Motor\Emm_V5.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

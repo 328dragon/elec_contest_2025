@@ -46,6 +46,8 @@
 "origin\mecanum.o"
 "origin\controller.o"
 "origin\planner.o"
+"origin\pid.o"
+"origin\emm_v5.o"
 "origin\croutine.o"
 "origin\event_groups.o"
 "origin\list.o"
@@ -56,6 +58,9 @@
 "origin\cmsis_os.o"
 "origin\heap_4.o"
 "origin\port.o"
+"origin\lib_common.o"
+"origin\lib_math.o"
+"origin\lib_promise.o"
 --strict --scatter "origin\origin.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
