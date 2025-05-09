@@ -341,7 +341,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;../mcu_bsp/can;../mcu_bsp/Motor;../mcu_bsp/chassis;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;..\mcu_bsp\planning</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;../mcu_bsp/can;../mcu_bsp/Motor;../mcu_bsp/chassis;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;..\mcu_bsp\planning;..\lib;..\mcu_bsp\system_controller</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -894,6 +894,11 @@
               <FileName>planner.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\mcu_bsp\planning\planner.c</FilePath>
+            </File>
+            <File>
+              <FileName>pid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mcu_bsp\system_controller\pid.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1528,6 +1533,26 @@
                   </Cads>
                 </FileArmAds>
               </FileOption>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Lib</GroupName>
+          <Files>
+            <File>
+              <FileName>Lib_Common.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lib\Lib_Common.c</FilePath>
+            </File>
+            <File>
+              <FileName>Lib_Math.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lib\Lib_Math.c</FilePath>
+            </File>
+            <File>
+              <FileName>Lib_Promise.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lib\Lib_Promise.c</FilePath>
             </File>
           </Files>
         </Group>

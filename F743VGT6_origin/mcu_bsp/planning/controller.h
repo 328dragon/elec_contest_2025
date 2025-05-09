@@ -1,10 +1,11 @@
 #ifndef __CONTROLLER_H
 #define __CONTROLLER_H
 
-#include "Lib_pormise.h"
+#include "Lib_Promise.h"
 #include "Motor.h"
-#include "Kinematic.h"
+#include "Mecanum.h"
 #include "Lib_List.h"
+#include "pid.h"
 
 typedef enum {
     LOCATION_CONTROL,     // 位置闭环
@@ -24,10 +25,10 @@ typedef struct {
     Kinematic_t* kinematic;
 } Controller_t;
 
-// 构造函数
+//
 void Controller_Init(Controller_t* controller, IMotorSpeed_t** MotorList, Kinematic_t* kinematic);
 
-// 成员函数
+
 void Controller_KinematicAndControlUpdate(Controller_t* controller, uint16_t dt);
 void Controller_KinematicAndControlUpdateWithYaw(Controller_t* controller, uint16_t dt, float yaw);
 void Controller_setMotorTargetSpeed(Controller_t* controller, float* target_speed);
